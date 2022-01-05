@@ -8,16 +8,17 @@
         },
         "rgName": {
           "type": "string",
-          "defaultValue": "rg-pipeline-result"
+          "defaultValue": "rg-adolab-test"
         }
     },
     "variables": {},
     "resources": [
         {
-          "type": "Microsoft.Resources/resourceGroups",
-          "apiVersion": "2018-05-01",
+          "type": "Microsoft.Resources/appConfigurations",
           "location": "[parameters('rgLocation')]",
-          "name": "[parameters('rgName')]"
+          "name": "apc-adolab-weu",
+          "resource_group_name": "[parameters('rgName')]",
+          "sku": "free"
         }
     ],
     "outputs":{}
