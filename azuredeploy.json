@@ -8,7 +8,7 @@
         },
         "rgName": {
           "type": "string",
-          "defaultValue": "rg-adolab-test"
+          "defaultValue": "rg-adolabam-test"
         }
     },
     "variables": {},
@@ -16,7 +16,7 @@
         {
           "type": "Microsoft.Resources/appConfigurations",
           "location": "[parameters('rgLocation')]",
-          "name": "apc-adolab-weu",
+          "name": "apc-adolabam-weu",
           "resource_group_name": "[parameters('rgName')]",
           "sku": "free"
         }
